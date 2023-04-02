@@ -11,9 +11,7 @@ export function AdminApp() {
     }, [])
 
     return <section className="admin">
-        {isLoading && 'Loading...'}
         {users && <ul>
-
             {users.map(user => (
                 <li key={user._id}>
                     <pre>{JSON.stringify(user, null, 2)}</pre>

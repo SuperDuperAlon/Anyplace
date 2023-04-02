@@ -1,11 +1,8 @@
-import zIndex from "@mui/material/styles/zIndex"
 import { useState } from "react"
-import { FiChevronRight, FiChevronLeft } from "react-icons/fi"
 import Carousel from "react-material-ui-carousel"
 
 export function StayDetailsCarousel({ imgs }) {
 
-console.log(imgs);
     const [imgIdx, setImgIdx] = useState(0)
 
     function prevImg(ev) {

@@ -38,9 +38,10 @@ export function RootCmp() {
           <Route path="/book/stay/:id/" element={<StayOrder />}>
             <Route path="/book/stay/:id/:filterBy" element={<StayOrder />} />
           </Route>
-          <Route path="/amenities/" element={<AmenitiesModal />} />
+
         </Routes>
       </main>
+      {/* <AppFooter /> */}
     </div>
   );
 }

@@ -26,8 +26,8 @@
 
   @include for-wide-layout {
     grid-template-columns:
-      // minmax($pad-40,1fr) minmax($x-large-breakpoint, 1700px) minmax($pad-40,1fr);
-      80px minmax($x-large-breakpoint, auto) 80px;
+      minmax($pad-24,1fr) minmax($x-large-breakpoint, 1700px) minmax($pad-24,1fr);
+      // minmax(24px, 1fr) minmax(auto, $x-large-breakpoint) minmax(24px, 1fr)
   }
 }
 
@@ -61,13 +61,11 @@
   }
 
   @include for-details-lg-layout {
-    // background-color: orange;
     grid-template-columns:
       minmax(40px, 1fr) minmax(auto, $large-breakpoint-details) minmax(40px, 1fr);
   }
 
   @include for-details-xl-layout {
-    // background-color: red;
 
     grid-template-columns:
       minmax(80px, 1fr) minmax(auto, $x-large-breakpoint-details) minmax(80px, 1fr);
